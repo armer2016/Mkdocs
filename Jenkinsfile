@@ -17,9 +17,11 @@ pipeline {
             }
         }
         stage('Test') {
-            sh """
-            curl -IL localhost:8000
+            steps {
+                sh """
+                curl -IL localhost:8000
+                """
+            }
         }
     }
-
 }
