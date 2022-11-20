@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh """
-                docker build -t mkdocs:2.0.0 -f mkdocs/Dockerfile 
+                docker build -t mkdocs:3.0.0 -f ./Dockerfile .
                 """
             }
         }
